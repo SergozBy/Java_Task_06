@@ -9,7 +9,7 @@ public class StatsServiceTest {
     @Test
     void sumOfAllSales() {
         StatsService service = new StatsService();
-        int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedSum = 180;
         // вызываем целевой метод:
         int actualSum = service.sumOfAllSales(sales);
@@ -24,7 +24,7 @@ public class StatsServiceTest {
     @Test
     void avrOfAllSales() {
         StatsService service = new StatsService();
-        int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedAvr = 15;
         // вызываем целевой метод:
         int actualAvr = service.avrOfAllSales(sales);
@@ -39,7 +39,7 @@ public class StatsServiceTest {
     @Test
     void numberOfMonthMaxSales() {
         StatsService service = new StatsService();
-        int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedMax = 8;
 
         // вызываем целевой метод:
@@ -55,7 +55,7 @@ public class StatsServiceTest {
     @Test
     void numberOfMonthMinSales() {
         StatsService service = new StatsService();
-        int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedMin = 9;
 
         // вызываем целевой метод:
@@ -71,7 +71,7 @@ public class StatsServiceTest {
     @Test
     void countOfMothLessAvrSales() {
         StatsService service = new StatsService();
-        int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedLess = 5;
 
         // вызываем целевой метод:
@@ -87,7 +87,7 @@ public class StatsServiceTest {
     @Test
     void countOfMothMoreAvrSales() {
         StatsService service = new StatsService();
-        int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedMore = 5;
 
         // вызываем целевой метод:
